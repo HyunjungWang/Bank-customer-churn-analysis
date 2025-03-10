@@ -1,21 +1,19 @@
 # Bank-customer-churn-analysis
 
-This document outlines the steps involved in performing Bank Customer Churn Analysis by leveraging Power BI and Azure Cloud services. It includes steps to upload customer churn data from a CSV file into Azure Blob Storage, transfer the data to an Azure SQL Database, clean the data, and then perform customer segmentation, categorization, and data formatting in Power BI using Power Query.
+This document outlines the steps involved in performing Bank Customer Churn Analysis by leveraging Power BI and Azure Cloud services.
+The analysis is based on the [Bank Customer Churn dataset from Kaggle](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn).
+
+It includes steps to upload customer churn data from a CSV file into Azure Blob Storage, transfer the data to an Azure SQL Database, clean the data, and then perform customer segmentation, categorization, and data formatting in Power BI using Power Query.
+
 
 Additionally, it covers the creation of visualizations and KPIs in Power BI to analyze churn patterns. Key metrics such as churn rate, average tenure, and total customers are calculated using DAX. Various charts, including Line and Stacked Column Charts, are used to display distributions, while a Churn Status Slicer allows for dynamic filtering.
 
 Finally, actionable insights are derived from the data, helping identify factors influencing churn and enabling data-driven decision-making to improve customer retention strategies.
 
+> **Note:** I used Azure Cloud to familiarize myself with cloud-based data processing. However, you can also directly import the data from a local CSV file into Power BI. In this project, I connected Power BI with an Azure SQL Server to import the data.
+
 
 ## 1. Upload CSV to Azure Blob Storage
-1. Create an Azure Blob Storage Container:
-
-- Go to the Azure Portal.
-- Navigate to Storage Accounts and select your account.
-- Create a new Blob Container in your storage account for storing the CSV file.
-2. Upload CSV File to Blob Storage:
-- In your Blob Container, click Upload.
-- Select and upload the CSV file that contains customer churn data to Azure Blob Storage.
 
 ## 2. Create Data Flow and Pipeline in Azure Data Factory
 1. Create an Azure Data Factory Instance:
