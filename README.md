@@ -64,6 +64,7 @@ After cleaning and categorizing the data, use Power BI to create meaningful visu
 3) Distributions and Churn Rate: Use a Line and Stacked Column Chart to show customer distributions and churn rate.
 4) Churn Status Slicer: Add a slicer to allow users to filter data by churn status (e.g., churned vs. retained customers).
 
+![Project Screenshot](https://github.com/HyunjungWang/bank-customer-churn-analysis/blob/main/Chrun_PowerBI.png)
 
 ## 7. Insights from Bank Customer Churn Analysis
 ### 1. Customer Overview
