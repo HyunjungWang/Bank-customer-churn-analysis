@@ -54,31 +54,75 @@ This document outlines the steps involved in performing Bank Customer Churn Anal
 
 
 
-## Step 6: Build Visualizations and KPIs in Power BI
-Create Visualizations:
-
-After cleaning and categorizing the data, use Power BI to create visualizations:
-Churn Rate: Show the churn rate as a percentage of customers who left versus total customers.
-Age Group Distribution: Create a pie chart to display the distribution of customers in different age groups.
-Credit Score Distribution: Use bar charts to show the breakdown of customers by credit score.
-Churn vs Tenure: Visualize how churn correlates with customer tenure (duration).
-Add KPIs:
-
-Use the following KPIs in Power BI to show the performance metrics:
-Churned Customers: Count the number of customers who have exited.
-Average Age: Display the average age of customers.
-Average Tenure: Show the average customer tenure in the bank.
+## 6. Build Visualizations and KPIs in Power BI
+After cleaning and categorizing the data, use Power BI to create meaningful visualizations:
+1) Customer Segmentation: Visualize customers by activity, card, products, country, and gender.
+2)  Key Metrics (DAX Calculations):
+- Churn Rate: Calculated using DAX to measure customer retention.
+- Average Tenure: Calculated using DAX to show the average length of customer relationships.
+- Total Customers: Calculated using DAX to determine the total customer count.
+3) Distributions and Churn Rate: Use a Line and Stacked Column Chart to show customer distributions and churn rate.
+4) Churn Status Slicer: Add a slicer to allow users to filter data by churn status (e.g., churned vs. retained customers).
 
 
+## 7. Insights from Bank Customer Churn Analysis
+### 1. Customer Overview
 
-Conclusion
-This process covers the entire workflow for Bank Customer Churn Analysis using Azure Cloud and Power BI:
+The dataset consists of 10,000 customers, out of which 2,038 have churned, leading to a churn rate of 20.38%.
 
-Data Upload: CSV data is uploaded to Azure Blob Storage.
-Data Transfer: Data is transferred to Azure SQL Database using Azure Data Factory.
-Data Cleaning: Duplicate and null values are removed within the SQL database.
-Data Categorization & Formatting: Data is categorized and formatted using Power Query in Power BI (e.g., age groups, credit scores, churn status).
-Visualization: Final KPIs and data visualizations are built in Power BI for churn analysis.
-By following this process, you can gain insights into customer churn, segment customers, and monitor KPIs such as churn rate, average age, and tenure, providing valuable information for business decision-making.
+The average of Tenure is 5 years old.
+
+A Churn Status filter is applied, allowing dynamic analysis of churned vs. non-churned customers.
+
+### 2. Customer Distribution by Key Attributes
+#### - Activity Level:
+
+51.51% of customers are active, while 48.49% are inactive.
+
+Inactive customers have a higher churn risk, indicating potential engagement issues.
+
+#### - Credit Card Ownership:
+
+70.55% of customers own a credit card, while 29.45% do not.
+
+Credit card ownership does not significantly impact churn rate.
+
+#### - Products Purchased:
+
+Prod 1 & Prod 2 are the most popular products, with over 5K and 4.6K users, respectively.
+
+Prod 3 & Prod 4 have significantly fewer customers, indicating lower adoption or relevance.
+
+#### - Geographic Distribution:
+
+Most customers are from France (~50%), followed by Germany and Spain (25% each).
+
+Country-specific churn analysis may reveal location-based trends.
+
+#### - Gender Breakdown:
+
+54.57% of customers are Male, while 45.43% are Female.
+
+Gender distribution appears balanced, with no significant churn disparity observed.
+
+### 3. Churn Rate Analysis by Key Factors
+#### - Age Group vs. Churn:
+
+The churn rate peaks between ages 40-49, suggesting that this segment is at higher risk.
+
+Younger customers (<30) and older customers (>60) have lower churn rates.
+
+#### - Credit Score vs. Churn:
+
+Customers with a credit score between 600-799 are the largest segment, but higher churn rates occur in the 400-499 range.
+
+Better credit scores (>800) correlate with lower churn rates.
+#### - Loyalty Points vs. Churn:
+
+Customers with 300-699 loyalty points have the highest churn rate.
+
+Customers with 900+ points churn the least, suggesting that a strong loyalty program reduces churn.
+
+
 
 
