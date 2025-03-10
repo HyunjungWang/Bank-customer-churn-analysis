@@ -2,6 +2,11 @@
 
 This document outlines the steps involved in performing Bank Customer Churn Analysis by leveraging Power BI and Azure Cloud services. It includes steps to upload customer churn data from a CSV file into Azure Blob Storage, transfer the data to an Azure SQL Database, clean the data, and then perform customer segmentation, categorization, and data formatting in Power BI using Power Query.
 
+Additionally, it covers the creation of visualizations and KPIs in Power BI to analyze churn patterns. Key metrics such as churn rate, average tenure, and total customers are calculated using DAX. Various charts, including Line and Stacked Column Charts, are used to display distributions, while a Churn Status Slicer allows for dynamic filtering.
+
+Finally, actionable insights are derived from the data, helping identify factors influencing churn and enabling data-driven decision-making to improve customer retention strategies.
+
+
 ## 1. Upload CSV to Azure Blob Storage
 1. Create an Azure Blob Storage Container:
 
@@ -64,7 +69,7 @@ After cleaning and categorizing the data, use Power BI to create meaningful visu
 3) Distributions and Churn Rate: Use a Line and Stacked Column Chart to show customer distributions and churn rate.
 4) Churn Status Slicer: Add a slicer to allow users to filter data by churn status (e.g., churned vs. retained customers).
 
-![Project Screenshot](https://github.com/HyunjungWang/bank-customer-churn-analysis/blob/main/Chrun_PowerBI.png)
+![Image](https://github.com/user-attachments/assets/b6a0d881-4cb0-4018-8a17-ef62f77ca946)
 
 ## 7. Insights from Bank Customer Churn Analysis
 ### 1. Customer Overview
